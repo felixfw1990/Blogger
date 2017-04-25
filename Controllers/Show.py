@@ -8,8 +8,3 @@ def index(request):
     context = {}
     context['hello'] = 'Hello World!'
     return render(request, 'show/index.html', context)
-
-# def index(request):
-#     context = {}
-#     context['hello'] = 'Hello World!'
-#     return render(request, 'hello.html', context)

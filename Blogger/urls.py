@@ -19,6 +19,7 @@ from Controllers import Index, Show
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/', Index.index),
-    url(r'^show/', Show.index)
+    url(r'^index/index', Index.index),
+    url(r'^index/create', Index.create),
+    url(r'^show/index', Show.index)
 ]
