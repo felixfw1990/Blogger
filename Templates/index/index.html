@@ -5,7 +5,12 @@
     <title>Index</title>
 </head>
 <body>
-
-this is index {{ id }}
+<div><a href="#">create</a></div>
+<div>
+    {% for v in list %}
+        <div><a href="/show/index/{{ v.id }}">{{ v.title }}</a></div>
+    {% endfor %}
+</div>
+<br />
 </body>
 </html>
